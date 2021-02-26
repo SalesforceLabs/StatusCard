@@ -1,0 +1,150 @@
+<!--
+ * Copyright (c) 2020, salesforce.com, inc.
+ * All rights reserved.
+ * SPDX-License-Identifier: BSD-3-Clause
+ * For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+ -->
+<template>
+	<div class="lightning-status-card">
+        <div class="loading slds-align_absolute-center" data-mode="show">
+            <lightning-spinner variant="brand" size="small"></lightning-spinner>
+        </div>
+
+        <article class="home matostyle" data-mode="view">
+            <div class="action-area">
+                <lightning-icon
+                    class="reload-button"
+                    icon-name="utility:loop"
+                    size="xx-small"
+                    alternative-text="Reload">
+                </lightning-icon>
+                <lightning-icon
+                    class="edit-button"
+                    icon-name="utility:edit"
+                    size="xx-small"
+                    alternative-text="Edit">
+                </lightning-icon>
+            </div>
+            <ul class="flex-box flex-col alerts" lwc:dom="manual">
+            </ul>
+            <div class="new-status-card">
+                <div class="new-button">＋</div>
+            </div>
+        </article>
+
+        <section role="dialog" aria-modal="true" class="slds-modal">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <h2 class="slds-text-heading_medium slds-hyphenate">{label.StatusCard_BackgroundColorOptions}</h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium matostyle">
+                    <ul class="flex-box flex-col">
+                        <li data-condition="1" style="padding-bottom: 14px;">
+                            <div class="condition-header">Condition 1</div>
+                            <ul class="flex-box">
+                                <li>
+                                    <ul class="flex-box condition-choice">
+                                        <li class="condition-text">Record count</li>
+                                        <li>
+                                            <select class="slds-select">
+                                                <option value=">"> &gt; </option>
+                                                <option value=">="> &gt;= </option>
+                                                <option value="=="> == </option>
+                                                <option value="<"> &lt; </option>
+                                                <option value="<="> &lt;= </option>
+                                            </select>
+                                        </li>
+                                        <li><input type="number" class="slds-input" value=""></li>
+                                    </ul>
+                                </li>
+                                <li class="flex-fixed" style="position: relative">
+                                    <div class="alert-color">
+                                        <div class="alert-color-picker"></div>
+                                        <input type="color" value="#3f51b5">
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li data-condition="2" style="padding-bottom: 14px;">
+                            <div class="condition-header">Condition 2</div>
+                            <ul class="flex-box">
+                                <li>
+                                    <ul class="flex-box condition-choice">
+                                        <li class="condition-text">Record count</li>
+                                        <li>
+                                            <select class="slds-select">
+                                                <option value=">"> &gt; </option>
+                                                <option value=">="> &gt;= </option>
+                                                <option value="=="> == </option>
+                                                <option value="<"> &lt; </option>
+                                                <option value="<="> &lt;= </option>
+                                            </select>
+                                        </li>
+                                        <li><input type="number" class="slds-input" value=""></li>
+                                    </ul>
+                                </li>
+                                <li class="flex-fixed" style="position: relative">
+                                    <div class="alert-color">
+                                        <div class="alert-color-picker"></div>
+                                        <input type="color" value="#3f51b5">
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li data-condition="3" style="padding-bottom: 14px;">
+                            <div class="condition-header">Condition 3</div>
+                            <ul class="flex-box">
+                                <li>
+                                    <ul class="flex-box condition-choice">
+                                        <li class="condition-text">Record count</li>
+                                        <li>
+                                            <select class="slds-select">
+                                                <option value=">"> &gt; </option>
+                                                <option value=">="> &gt;= </option>
+                                                <option value="=="> == </option>
+                                                <option value="<"> &lt; </option>
+                                                <option value="<="> &lt;= </option>
+                                            </select>
+                                        </li>
+                                        <li><input type="number" class="slds-input" value=""></li>
+                                    </ul>
+                                </li>
+                                <li class="flex-fixed" style="position: relative">
+                                    <div class="alert-color">
+                                        <div class="alert-color-picker"></div>
+                                        <input type="color" value="#3f51b5">
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li data-condition="0">
+                            <div class="condition-header">{label.StatusCard_FallbackColor}</div>
+                            <div style="position: relative; height: 32px;">
+                                <div class="alert-color">
+                                    <div class="alert-color-picker"></div>
+                                    <input type="color" value="#3f51b5">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <footer class="slds-modal__footer matostyle">
+                    <ul class="flex-box">
+                        <li class="flex-one"></li>
+                        <li class="flex-one">
+                            <ul class="flex-box">
+                                <li class="flex-one">
+                                    <button class="slds-button slds-button_destructive btn-close">{label.StatusCard_CloseButton}</button>
+                                </li>
+                                <li class="flex-one">
+                                    <button class="slds-button slds-button_brand btn-save">{label.StatusCard_SaveButton}</button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop"></div>
+	</div>
+</template>

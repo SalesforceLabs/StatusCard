@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>StatusCard_BackgroundColorOptions</fullName>
+        <categories>StatusCard</categories>
+        <language>ja</language>
+        <protected>false</protected>
+        <shortDescription>StatusCard_BackgroundColorOptions</shortDescription>
+        <value>Advanced Background Color Options</value>
+    </labels>
+    <labels>
+        <fullName>StatusCard_CloseButton</fullName>
+        <categories>StatusCard</categories>
+        <language>ja</language>
+        <protected>false</protected>
+        <shortDescription>StatusCard_CloseButton</shortDescription>
+        <value>Close</value>
+    </labels>
+    <labels>
+        <fullName>StatusCard_DefaultNumberText</fullName>
+        <categories>StatusCard</categories>
+        <language>ja</language>
+        <protected>false</protected>
+        <shortDescription>StatusCard_DefaultNumberText</shortDescription>
+        <value>Records</value>
+    </labels>
+    <labels>
+        <fullName>StatusCard_FallbackColor</fullName>
+        <categories>StatusCard</categories>
+        <language>ja</language>
+        <protected>false</protected>
+        <shortDescription>StatusCard_FallbackColor</shortDescription>
+        <value>Fallback</value>
+    </labels>
+    <labels>
+        <fullName>StatusCard_SaveButton</fullName>
+        <categories>StatusCard</categories>
+        <language>ja</language>
+        <protected>false</protected>
+        <shortDescription>StatusCard_SaveButton</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>StatusCard_UpdateErrorMessage</fullName>
+        <categories>StatusCard</categories>
+        <language>ja</language>
+        <protected>false</protected>
+        <shortDescription>StatusCard_UpdateErrorMessage</shortDescription>
+        <value>Check your permissions to access the Object or Record.</value>
+    </labels>
+    <labels>
+        <fullName>StatusCard_UpdateErrorTitle</fullName>
+        <categories>StatusCard</categories>
+        <language>ja</language>
+        <protected>false</protected>
+        <shortDescription>StatusCard_UpdateErrorTitle</shortDescription>
+        <value>Failed to update the StatusCard</value>
+    </labels>
+</CustomLabels>

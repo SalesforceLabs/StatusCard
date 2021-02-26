@@ -1,0 +1,319 @@
+/*
+ * Copyright (c) 2020, salesforce.com, inc.
+ * All rights reserved.
+ * SPDX-License-Identifier: BSD-3-Clause
+ * For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+ */
+.matostyle ul.flex-box {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.matostyle ul.flex-col {
+  flex-direction: column;
+}
+
+.matostyle ul.flex-box.flex-wrap {
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.matostyle ul.flex-box li {
+  margin: 0px;
+  width: 100%;
+}
+.matostyle ul.flex-box li.flex-fixed {
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.matostyle ul.flex-box li.flex-one {
+  flex: 1;
+}
+.matostyle ul.flex-box li.flex-two {
+  flex: 2;
+}
+.matostyle ul.flex-box li.flex-three {
+  flex: 3;
+}
+.matostyle ul.flex-box li.flex-four {
+  flex: 4;
+}
+.matostyle ul.flex-box li.flex-five {
+  flex: 5;
+}
+
+.lightning-status-card {
+  position: relative;
+}
+.home {
+  min-height: 80px;
+  padding: 10px 12px 12px;
+}
+.home .status-card {
+  position: relative;
+  min-height: 56px;
+}
+.home .content-holder {
+  display: none;
+}
+.home .status-card .status-card-edit {
+  position: absolute !important;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.home .status-card .alert-count {
+  position: absolute !important;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #212121;
+  padding: 1px 7px;
+  border-radius: 30px;
+  background-color: #fafafa;
+  color: #212121;
+  white-space: nowrap;
+}
+.home .status-card .alert-label {
+  width: 100%;
+  font-weight: 100;
+  font-size: initial;
+}
+.home .status-card .alert-object {
+  font-size: x-small;
+  font-weight: 900;
+  margin-bottom: 2px;
+}
+.home[data-mode="view"] [data-type="view"] {
+  display: block;
+}
+.home[data-mode="edit"] [data-type="edit"] {
+  display: block;
+}
+.reload-button,
+.edit-button {
+  position: relative;
+  cursor: pointer;
+}
+.action-area {
+  text-align: right;
+}
+.reload-button:hover,
+.edit-button:hover {
+  opacity: 0.6;
+}
+.reload-button {
+  margin-right: 1rem;
+}
+
+.lightning-status-card .home.matostyle ul.alerts > li {
+  padding: 10px 4px;
+  padding-bottom: 0px;
+}
+
+.status-card {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: #3f51b5;
+  transform: scale(0);
+  transition: all 0.3s ease-in-out;
+}
+.status-card.show {
+  transform: scale(1.0);
+}
+.status-card-view,
+.status-card-edit {
+  display: none;
+}
+.home[data-mode="view"] .status-card:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+  box-shadow: 0px 3px 4px 0px #9e9e9e;
+}
+.home[data-mode="view"] .status-card .status-card-view {
+  display: block;
+}
+
+.home[data-mode="edit"] .status-card .status-card-edit {
+  display: block;
+}
+.alert-select select {
+  background-color: transparent;
+}
+.alert-suffix {
+  width: 100%;
+  text-align: center;
+  margin-top: 6px;
+  border: 0px;
+  height: 20px;
+  border-radius: 4px;
+}
+.alert-color {
+  position: absolute !important;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.alert-color-picker {
+  width: 20px;
+  height: 20px;
+  background-color: #3f51b5;
+  border-radius: 20px;
+  border: 1px solid #fafafa;
+  cursor: pointer;
+}
+.alert-color input {
+  /* display: none; */
+  width: 34px;
+  height: 36px;
+  padding: 0px;
+  margin: 0px;
+  border: 0px transparent;
+  border-radius: 30px;
+  background-color: transparent;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+.alert-text-color {
+  position: absolute !important;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 900;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+[data-mode="dark"] .alert-text-color {
+  color: #212121;
+  background-color: #fafafa;
+}
+[data-mode="dark"] .alert-select .slds-select,
+[data-mode="dark"] .alert-object,
+[data-mode="dark"] .alert-label {
+  color: #212121;
+  border-color: #212121;
+}
+[data-mode="light"] .alert-text-color {
+  color: #fafafa;
+  background-color: #212121;
+}
+[data-mode="light"] .alert-select .slds-select,
+[data-mode="light"] .alert-object,
+[data-mode="light"] .alert-label {
+  color: #fafafa;
+  border-color: #fafafa;
+}
+.status-card-view .status-card-view-01,
+.status-card-view .status-card-view-02,
+.status-card-edit .status-card-edit-01,
+.status-card-edit .status-card-edit-02,
+.status-card-edit .status-card-edit-03 {
+  position: relative;
+}
+.status-card-edit .status-card-edit-01 {
+  padding-left: 12px;
+  padding-right: 6px;
+}
+
+.flex-fixed,
+.status-card-view .status-card-view-02,
+.status-card-edit .status-card-edit-01-b,
+.status-card-edit .status-card-edit-02,
+.status-card-edit .status-card-edit-03 {
+  flex-basis: 30px;
+}
+
+.new-status-card {
+  position: relative;
+  min-height: 54px;
+  display: none;
+}
+
+.home[data-mode="edit"] .new-status-card {
+  display: block;
+}
+.new-status-card .new-button {
+  position: absolute !important;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-color: #009688;
+  text-align: center;
+  line-height: 32px;
+  color: #fafafa;
+  border-radius: 30px;
+  /* font-weight: 900; */
+  font-size: large;
+  transition: all 0.2s ease-in-out;
+}
+.new-status-card .new-button:hover {
+  background-color: #80cbc4;
+}
+.status-card-delete {
+  position: absolute !important;
+  width: 20px;
+  height: 20px;
+  top: -20px;
+  right: 22px;
+  background-color: #f44336;
+  line-height: 18px;
+  text-align: center;
+  border: 1px solid #fafafa;
+  border-radius: 20px;
+  color: #fafafa;
+  font-weight: 900;
+  font-size: large;
+  cursor: pointer;
+}
+.loading {
+  display: none;
+}
+.loading[data-mode="show"] {
+  display: block;
+}
+
+.condition-choice {
+  width: 300px;
+  margin: auto !important;
+}
+
+.condition-choice .slds-input {
+  width: 75px;
+  text-align: center;
+  margin-left: 20px;
+}
+.condition-choice .condition-text {
+  line-height: 32px;
+}
+
+.condition-header {
+  font-size: smaller;
+  font-weight: 900;
+}
+
+.slds-modal__container {
+  max-width: 26rem !important;
+}
+
+.slds-modal__content .alert-color-picker {
+  width: 28px;
+  height: 28px;
+  display: none;
+}
+
+lightning-icon {
+  background: #fff;
+  padding: 3px;
+}
